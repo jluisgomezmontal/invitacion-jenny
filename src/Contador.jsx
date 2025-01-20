@@ -88,26 +88,16 @@ export const Contador = () => {
         ))}
       </Grid>
       <Typography
-        variant="h3"
+        variant="h2"
         sx={{ mt: 2 }}
-        component="div"
         className="cedarville-cursive-regular"
       >
         Jennifer Vazquez
       </Typography>
-      <Typography
-        variant="h3"
-        component="div"
-        className="cedarville-cursive-regular"
-      >
+      <Typography variant="h2" className="cedarville-cursive-regular">
         &
       </Typography>
-      <Typography
-        variant="h3"
-        component="div"
-        className="cedarville-cursive-regular"
-        sx={{ mb: 2 }}
-      >
+      <Typography variant="h2" className="cedarville-cursive-regular">
         Omar Hernandez
       </Typography>
       <Typography
