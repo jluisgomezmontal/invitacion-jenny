@@ -1,8 +1,11 @@
+/* eslint-disable react/prop-types */
 import { Box, CardContent, Typography } from "@mui/material";
 import { useEffect, useState } from "react";
 import Grid from "@mui/material/Grid2";
+import { traductor } from "./utils";
 
-export const Contador = () => {
+export const Contador = ({ language }) => {
+  console.log(language);
   const targetDate = new Date("November 28, 2025 17:00:00").getTime();
   const calculateTimeLeft = () => {
     const now = new Date().getTime();
@@ -35,17 +38,20 @@ export const Contador = () => {
     {
       id: 1,
       tiempo: timeLeft.days,
-      description: "DIAS",
+      es: "DIAS",
+      en: "DAYS",
     },
     {
       id: 2,
       tiempo: timeLeft.hours,
-      description: "HORAS",
+      es: "HORAS",
+      en: "HOURS",
     },
     {
       id: 3,
       tiempo: timeLeft.minutes,
-      description: "MINUTOS",
+      es: "MINUTOS",
+      en: "MINUTES",
     },
   ];
 
@@ -71,16 +77,21 @@ export const Contador = () => {
               }}
             >
               <CardContent sx={{ textAlign: "center", py: 6, px: 0 }}>
-                <Typography variant="h2" component="div" color="secundary">
+                <Typography
+                  variant="h2"
+                  color="secondary"
+                  className="abhaya-libre-regular"
+                >
                   {card.tiempo}
                 </Typography>
                 <hr />
                 <Typography
-                  variant="h6"
-                  sx={{ color: "black", fontWeight: "bolder" }}
-                  className="merriweather-bold"
+                  variant="h5"
+                  sx={{ fontWeight: "bold" }}
+                  className="abhaya-libre-regular"
+                  color="secondary"
                 >
-                  {card.description}
+                  {card[language]}
                 </Typography>
               </CardContent>
             </Box>
@@ -94,7 +105,11 @@ export const Contador = () => {
       >
         Jennifer Vazquez
       </Typography>
-      <Typography variant="h2" className="cedarville-cursive-regular">
+      <Typography
+        sx={{ m: 0 }}
+        variant="h3"
+        className="cedarville-cursive-regular"
+      >
         &
       </Typography>
       <Typography variant="h2" className="cedarville-cursive-regular">
@@ -102,11 +117,12 @@ export const Contador = () => {
       </Typography>
       <Typography
         variant="h4"
-        align="center"
+        sx={{ fontWeight: "bold" }}
+        className="abhaya-libre-regular"
         color="secondary"
-        className="merriweather-bold"
+        align="center"
       >
-        Nos casamos
+        {traductor.hero[language]}
       </Typography>
     </Box>
   );

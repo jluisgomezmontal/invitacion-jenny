@@ -1,6 +1,7 @@
 import { Typography } from "@mui/material";
+import { traductor } from "./utils";
 
-export const Historia = () => {
+export const Historia = ({ language }) => {
   return (
     <div>
       <Typography
@@ -10,7 +11,7 @@ export const Historia = () => {
         className="merriweather-bold"
         sx={{ mt: 5 }}
       >
-        Nuestra Historia
+        {traductor.nuestraHistoria[language]}
       </Typography>
       <Typography
         variant="body1"

@@ -1,11 +1,13 @@
+import { useState } from "react";
 import { Hero } from "./Hero";
 import { Historia } from "./Historia";
-
 const App = () => {
+  const [language, setLanguage] = useState("es"); // Estado inicial: español
+
   return (
     <>
-      <Hero />
-      <Historia />
+      <Hero language={language} setLanguage={setLanguage} />
+      <Historia language={language} />
     </>
   );
 };
