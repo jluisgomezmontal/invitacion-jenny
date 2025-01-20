@@ -59,7 +59,7 @@ export const Idioma = ({ setLanguage, language }) => {
         alignItems: "end",
         justifyContent: "center",
         flexDirection: "column",
-        height: "90vh",
+        height: "90dvh",
       }}
     >
       <Stack
