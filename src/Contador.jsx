@@ -102,17 +102,23 @@ export const Contador = ({ language }) => {
         variant="h2"
         sx={{ mt: 2 }}
         className="cedarville-cursive-regular"
+        color="secondary"
       >
         Jennifer Vazquez
       </Typography>
       <Typography
+        color="secondary"
         sx={{ m: 0 }}
         variant="h3"
         className="cedarville-cursive-regular"
       >
         &
       </Typography>
-      <Typography variant="h2" className="cedarville-cursive-regular">
+      <Typography
+        color="secondary"
+        variant="h2"
+        className="cedarville-cursive-regular"
+      >
         Omar Hernandez
       </Typography>
       <Typography
