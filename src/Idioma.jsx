@@ -68,9 +68,9 @@ export const Idioma = ({ setLanguage, language }) => {
         sx={{
           alignItems: "center",
           border: "1px solid white",
-          borderRadius: "8px",
+          borderRadius: "20px",
           padding: 1,
-          mr: 1,
+          mr: 2,
         }}
       >
         <LanguageIcon />
