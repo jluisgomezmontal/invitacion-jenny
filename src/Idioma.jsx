@@ -10,6 +10,7 @@ export const Idioma = ({ setLanguage, language }) => {
     width: 28,
     height: 16,
     padding: 0,
+    zIndex: 1,
     display: "flex",
     "&:active": {
       "& .MuiSwitch-thumb": {
@@ -60,6 +61,7 @@ export const Idioma = ({ setLanguage, language }) => {
         justifyContent: "center",
         flexDirection: "column",
         height: "80vh",
+        zIndex: 1,
       }}
     >
       <Stack

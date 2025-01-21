@@ -1,6 +1,9 @@
 import { useState } from "react";
 import { Hero } from "./Hero";
 import { Historia } from "./Historia";
+import { Unance } from "./Unance";
+import { Itinerario } from "./Itinerario";
+import { Recuerdos } from "./Recuerdos";
 const actualUrl = window.location.href.slice(-2);
 const App = () => {
   const [language, setLanguage] = useState(actualUrl === "en" ? "en" : "es"); // Estado inicial: español
@@ -9,6 +12,9 @@ const App = () => {
     <>
       <Hero language={language} setLanguage={setLanguage} />
       <Historia language={language} />
+      <Unance language={language} />
+      <Itinerario language={language} />
+      <Recuerdos language={language} />
     </>
   );
 };

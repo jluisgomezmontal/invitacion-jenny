@@ -21,4 +21,56 @@ export const traductor = {
       en: "Today, with great excitement, we invite you to witness the next chapter in our story.",
     },
   ],
+  unance: {
+    es: "Únanse a nosotros para celebrar nuestro amor",
+    en: "Join us in celebrating our love",
+  },
+  fecha: {
+    es: "28/Noviembre/2025",
+    en: "28/November/2025",
+  },
+  hora: {
+    es: "5:00pm CST",
+    en: "5:00pm CST",
+  },
+  lugar: {
+    es: "Iglesia del Señor San Marcos Evangelista",
+    en: "Church of the Lord Saint Mark the Evangelist",
+  },
+  abrirMapa: {
+    es: "Abrir mapa",
+    en: "Open map",
+  },
+  itinerario: {
+    es: "Itinerario",
+    en: "Itinerary",
+  },
+  religiosa: {
+    es: "Ceremonia Religiosa 5:00 pm",
+    en: "Religious Ceremony 5:00 pm",
+  },
+  civil: {
+    es: "Ceremonia Civil 7:00 pm",
+    en: "Civil Ceremony 7:00 pm",
+  },
+  recepcion: {
+    es: "Recepcion 8:00 pm",
+    en: "Reception 8:00 pm",
+  },
+  baile: {
+    es: "Comienza el Baile 9:00 pm",
+    en: "Dancing starts at 9:00 pm",
+  },
+  nustrosRecuerdos: {
+    es: "Nuestros Recuerdos",
+    en: "Our Memories",
+  },
+  etiquetanos: {
+    es: "No olvides etiquetarnos en todas tus publicaciones de <strong>Instagram</strong> y <strong>Facebook</strong> utilizando nuestro hashtag...",
+    en: "Don't forget to tag us in all your Instagram and Facebook posts using our hashtag...",
+  },
+  testing: {
+    es: "Itinerario",
+    en: "Itinerary",
+  },
 };

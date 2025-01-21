@@ -23,7 +23,6 @@ hr{
 .cedarville-cursive-regular {
   font-family: "Luxurious Script", serif !important;
   font-style: normal;
-  color: #000000;
   text-align: center;
   line-height: .9 !important;
   font-weight: bold!important;
@@ -67,22 +66,31 @@ hr{
 }
 
 .watermark-container{
-  position: absolute; /* Posición relativa para que los elementos hijos se posicionen correctamente */
-  background: url('./assets/flor1.png') no-repeat center;
-  opacity: 0.2; /* Hace que la imagen sea transparente */
+  background: url('./assets/florrosa.png') no-repeat center;
+  opacity: 0.15; /* Hace que la imagen sea transparente */
   width: 100%;
   height: 600px;
-  transform: rotate(-45deg);
-  bottom: 200px;
-  left: 120px;
+  transform: rotate(-50deg);
+  top: -80px;
+  left: 150px;
 }
 .watermark-container2{
   position: absolute; /* Posición relativa para que los elementos hijos se posicionen correctamente */
-  background: url('./assets/flor1.png') no-repeat center;
-  opacity: 0.2; /* Hace que la imagen sea transparente */
+  background: url('./assets/florrosa.png') no-repeat center;
+  opacity: 0.15; /* Hace que la imagen sea transparente */
   width: 100%;
   height: 600px;
-  transform: rotate(25deg);
-  top: 80px;
-  right: 80px;
+  transform: rotate(45deg);
+  top: -50px;
+  right: 100px;
+}
+.watermark-container3{
+  position: absolute; /* Posición relativa para que los elementos hijos se posicionen correctamente */
+  background: url('./assets/florrosa.png') no-repeat center;
+  opacity: 0.15; /* Hace que la imagen sea transparente */
+  width: 100%;
+  height: 600px;
+  transform: rotate(-25deg);
+  bottom: 0px;
+  left: 100px;
 }

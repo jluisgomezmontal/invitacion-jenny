@@ -4,9 +4,35 @@ import { traductor } from "./utils";
 
 export const Historia = ({ language }) => {
   return (
-    <Box sx={{ position: "relative" }}>
-      <div className="watermark-container"></div>
-      <div className="watermark-container2"></div>
+    <Box>
+      <Box
+        sx={{
+          position: "absolute",
+          height: "400px",
+          width: "100%",
+          overflow: "hidden",
+          top: "850px",
+        }}
+      >
+        <Box
+          sx={{ position: "relative" }}
+          className="watermark-container"
+        ></Box>
+      </Box>
+      <Box
+        sx={{
+          position: "absolute",
+          height: "450px",
+          width: "100%",
+          overflow: "hidden",
+          top: "1300px",
+        }}
+      >
+        <Box
+          sx={{ position: "relative" }}
+          className="watermark-container2"
+        ></Box>
+      </Box>
       <Typography
         variant="h4"
         align="center"
