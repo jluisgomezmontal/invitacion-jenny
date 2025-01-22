@@ -94,3 +94,12 @@ hr{
   bottom: 0px;
   left: 100px;
 }
+
+.final{
+  background-image: url(./assets/final.jpeg);
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}

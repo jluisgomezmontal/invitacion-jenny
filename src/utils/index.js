@@ -69,8 +69,77 @@ export const traductor = {
     es: "No olvides etiquetarnos en todas tus publicaciones de <strong>Instagram</strong> y <strong>Facebook</strong> utilizando nuestro hashtag...",
     en: "Don't forget to tag us in all your Instagram and Facebook posts using our hashtag...",
   },
+  hospedaje: {
+    es: "Hospedaje",
+    en: "Lodging",
+  },
+  estancia: {
+    es: "Para una estancia mas placentera, te compartimos estas sugerencias muy cercanas ala celebracion.",
+    en: "For a more pleasant stay, we share these suggestions very close to the celebration.",
+  },
+  hoteles: [
+    {
+      nombre: "Hotel Mangos",
+      numero: "+527451089625",
+      direccion: {
+        es: "Carretera Nacional Acapulco-Pinotepa, Av. de las Palmas 27, 39960 San Marcos, Gro.",
+        en: "Acapulco-Pinotepa National Highway, 27 Las Palmas Avenue, 39960 San Marcos, Gro.",
+      },
+      ubicacion: {
+        es: "Ubicacion",
+        en: "Location",
+      },
+      llamar: {
+        es: "Llamar",
+        en: "Call",
+      },
+      mapa: "https://maps.app.goo.gl/wBFvGwH4bHjk7VSR8",
+    },
+    {
+      nombre: "Hotel Aleman",
+      numero: "+527451041825",
+      direccion: {
+        es: "Av. de las palmas, carretera federal 64, Centro, 39960 San Marcos, Gro.",
+        en: "Av. of the palms, federal highway 64, Center, 39960 San Marcos, Gro.",
+      },
+      ubicacion: {
+        es: "Ubicacion",
+        en: "Location",
+      },
+      llamar: {
+        es: "Llamar",
+        en: "Call",
+      },
+      mapa: "https://maps.app.goo.gl/gJkLtpsqbMYpXQ9t5",
+    },
+    {
+      nombre: "Hotel San Marcos",
+      numero: "+527454530752",
+      direccion: {
+        es: "Av. de las Palmas s/n, Emiliano Zapata, 39562 San Marcos, Gro.",
+        en: "Av. de las Palmas s/n, Emiliano Zapata, 39562 San Marcos, Gro.",
+      },
+      ubicacion: {
+        es: "Ubicacion",
+        en: "Location",
+      },
+      llamar: {
+        es: "Llamar",
+        en: "Call",
+      },
+      mapa: "https://maps.app.goo.gl/J12JugCfsGjGbMTB6",
+    },
+  ],
+  final: {
+    es: "Será un honor contar con su presencia en este día tan especial, donde cada sonrisa y cada abrazo harán de nuestra boda un recuerdo inolvidable.",
+    en: "It will be an honor to have your presence on this special day, where every smile and every hug will make our wedding an unforgettable memory.",
+  },
+  despedida: {
+    es: "Con todo nuestro amor,",
+    en: "With all our love,",
+  },
   testing: {
     es: "Itinerario",
-    en: "Itinerary",
+    en: "Lodging",
   },
 };

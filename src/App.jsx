@@ -4,6 +4,8 @@ import { Historia } from "./Historia";
 import { Unance } from "./Unance";
 import { Itinerario } from "./Itinerario";
 import { Recuerdos } from "./Recuerdos";
+import { Hospedaje } from "./Hospedaje";
+import { Final } from "./Final";
 const actualUrl = window.location.href.slice(-2);
 const App = () => {
   const [language, setLanguage] = useState(actualUrl === "en" ? "en" : "es"); // Estado inicial: español
@@ -15,6 +17,8 @@ const App = () => {
       <Unance language={language} />
       <Itinerario language={language} />
       <Recuerdos language={language} />
+      <Hospedaje language={language} />
+      <Final language={language} />
     </>
   );
 };
