@@ -2,11 +2,21 @@ import { Box, Button, Stack, Typography } from "@mui/material";
 import { traductor } from "./utils";
 import CallIcon from "@mui/icons-material/Call";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+// import Swiper core and required modules
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
 
 /* eslint-disable react/prop-types */
 export const Hospedaje = ({ language }) => {
   return (
-    <Box sx={{ position: "relative" }}>
+    <Box sx={{ position: "relative" }} className="completo">
       <Box
         sx={{
           position: "absolute",
@@ -52,62 +62,75 @@ export const Hospedaje = ({ language }) => {
       >
         {traductor.estancia[language]}
       </Typography>
-      {traductor.hoteles.map((hotel, index) => (
-        <Box
-          key={index}
-          sx={{
-            backgroundColor: "#FEC5B4",
-            mx: 5,
-            borderRadius: 20,
-            mb: 8,
-          }}
-        >
-          <Typography
-            variant="h2"
-            sx={{ pt: 6 }}
-            color="secondary"
-            className="cedarville-cursive-regular"
-          >
-            {hotel.nombre}
-          </Typography>
-          <Typography
-            variant="body1"
-            align="center"
-            color="secondary"
-            className="merriweather-bold"
-            sx={{ my: 3, mx: 4, position: "relative", zIndex: 1 }}
-          >
-            {hotel.direccion[language]}
-          </Typography>
-          <Stack
-            direction="row"
-            spacing={2}
-            sx={{
-              justifyContent: "center",
-              alignItems: "center",
-              pb: 8,
-            }}
-          >
-            <Button
-              variant="contained"
-              color="primary"
-              onClick={() => {
-                window.open(hotel.mapa, "_blank");
+      <Swiper
+        // install Swiper modules
+        modules={[Navigation, Pagination, Scrollbar, A11y]}
+        spaceBetween={50}
+        slidesPerView={1}
+        navigation
+        pagination={{ clickable: true }}
+        scrollbar={{ draggable: true }}
+        onSwiper={(swiper) => console.log(swiper)}
+        onSlideChange={() => console.log("slide change")}
+      >
+        {traductor.hoteles.map((hotel, index) => (
+          <SwiperSlide key={index}>
+            <Box
+              sx={{
+                backgroundColor: "#FEC5B4",
+                mx: 5,
+                borderRadius: 20,
+                mb: 8,
               }}
-              startIcon={<LocationOnOutlinedIcon />}
             >
-              {hotel.ubicacion[language]}
-            </Button>
-            <Button
-              variant="contained"
-              href={`tel:${hotel.numero}`}
-              endIcon={<CallIcon />}
-            >
-              {hotel.llamar[language]}
-            </Button>
-          </Stack>
-        </Box>
-      ))}
+              <Typography
+                variant="h2"
+                sx={{ pt: 6 }}
+                color="secondary"
+                className="cedarville-cursive-regular"
+              >
+                {hotel.nombre}
+              </Typography>
+              <Typography
+                variant="body1"
+                align="center"
+                color="secondary"
+                className="merriweather-bold"
+                sx={{ my: 3, mx: 4, position: "relative", zIndex: 1 }}
+              >
+                {hotel.direccion[language]}
+              </Typography>
+              <Stack
+                direction="row"
+                spacing={2}
+                sx={{
+                  justifyContent: "center",
+                  alignItems: "center",
+                  pb: 8,
+                }}
+              >
+                <Button
+                  variant="contained"
+                  color="primary"
+                  onClick={() => {
+                    window.open(hotel.mapa, "_blank");
+                  }}
+                  startIcon={<LocationOnOutlinedIcon />}
+                >
+                  {hotel.ubicacion[language]}
+                </Button>
+                <Button
+                  variant="contained"
+                  href={`tel:${hotel.numero}`}
+                  endIcon={<CallIcon />}
+                >
+                  {hotel.llamar[language]}
+                </Button>
+              </Stack>
+            </Box>
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </Box>
   );
 };

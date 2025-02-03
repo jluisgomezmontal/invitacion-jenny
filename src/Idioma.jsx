@@ -62,6 +62,7 @@ export const Idioma = ({ setLanguage, language }) => {
         flexDirection: "column",
         height: "80vh",
         zIndex: 1,
+        color: "white",
       }}
     >
       <Stack

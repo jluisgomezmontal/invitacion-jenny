@@ -5,7 +5,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 export const Recuerdos = ({ language }) => {
   return (
-    <Box sx={{ position: "relative" }}>
+    <Box sx={{ position: "relative" }} className="completo">
       <Box
         sx={{
           position: "absolute",

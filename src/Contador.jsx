@@ -53,6 +53,12 @@ export const Contador = ({ language }) => {
       es: "MINUTOS",
       en: "MINUTES",
     },
+    {
+      id: 4,
+      tiempo: timeLeft.seconds,
+      es: "SEGUNDOS",
+      en: "SECONDS",
+    },
   ];
 
   return (
@@ -68,7 +74,7 @@ export const Contador = ({ language }) => {
         }}
       >
         {cards.map((card, index) => (
-          <Grid size={4} key={index} sx={{ mt: 2, mx: 0 }}>
+          <Grid size={3} key={index} sx={{ mt: 2, mx: 0 }}>
             <Box
               sx={{
                 border: "2px solid white",
@@ -78,17 +84,17 @@ export const Contador = ({ language }) => {
             >
               <CardContent sx={{ textAlign: "center", py: 6, px: 0 }}>
                 <Typography
-                  variant="h2"
+                  variant="h3"
                   color="secondary"
-                  className="abhaya-libre-regular"
+                  className="abhaya-libre-regular numeros"
                 >
                   {card.tiempo}
                 </Typography>
                 <hr />
                 <Typography
-                  variant="h5"
+                  variant="subtitle1"
                   sx={{ fontWeight: "bold" }}
-                  className="abhaya-libre-regular"
+                  className="abhaya-libre-regular restante"
                   color="secondary"
                 >
                   {card[language]}
@@ -100,31 +106,29 @@ export const Contador = ({ language }) => {
       </Grid>
       <Typography
         variant="h2"
-        sx={{ mt: 2 }}
-        className="cedarville-cursive-regular"
+        className="cedarville-cursive-regular nombres jenny"
         color="secondary"
       >
         Jennifer Vazquez
       </Typography>
       <Typography
         color="secondary"
-        sx={{ m: 0 }}
         variant="h3"
-        className="cedarville-cursive-regular"
+        className="cedarville-cursive-regular nombres"
       >
         &
       </Typography>
       <Typography
         color="secondary"
         variant="h2"
-        className="cedarville-cursive-regular"
+        className="cedarville-cursive-regular nombres"
       >
-        Omar Hernandez
+        Omar Alexander
       </Typography>
       <Typography
         variant="h4"
         sx={{ fontWeight: "bold" }}
-        className="abhaya-libre-regular"
+        className="abhaya-libre-regular casamos"
         color="secondary"
         align="center"
       >

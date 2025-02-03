@@ -4,14 +4,14 @@ import { traductor } from "./utils";
 
 export const Historia = ({ language }) => {
   return (
-    <Box>
+    <Box className="completo">
       <Box
         sx={{
           position: "absolute",
           height: "400px",
           width: "100%",
           overflow: "hidden",
-          top: "850px",
+          top: "950px",
         }}
       >
         <Box
@@ -25,7 +25,7 @@ export const Historia = ({ language }) => {
           height: "450px",
           width: "100%",
           overflow: "hidden",
-          top: "1300px",
+          top: "1400px",
         }}
       >
         <Box
@@ -38,7 +38,7 @@ export const Historia = ({ language }) => {
         align="center"
         color="secondary"
         className="abhaya-libre-bold"
-        sx={{ mt: 5 }}
+        sx={{ py: 8 }}
       >
         {traductor.nuestraHistoria[language]}
       </Typography>
@@ -49,7 +49,7 @@ export const Historia = ({ language }) => {
           align="center"
           color="secondary"
           className="merriweather-bold"
-          sx={{ my: 5, mx: 4, position: "relative", zIndex: 1 }}
+          sx={{ pb: 6, mx: 4, position: "relative", zIndex: 1 }}
         >
           {texto[language]}
         </Typography>

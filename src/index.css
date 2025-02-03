@@ -5,9 +5,12 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  opacity: 75%;
+  opacity: 70%;
 }
 
+.completo{
+  height: 100vh;
+}
 hr{
   width: 30px;
   font-weight: bold;
@@ -103,3 +106,27 @@ hr{
   background-position: center;
   background-size: cover;
 }
+
+.jenny{
+  padding-top: 35px;
+ }
+ @media (max-width: 390px) {
+   .jenny{
+     padding-top: 30px;
+    }
+   .nombres{
+     font-size: 50px!important;
+   }
+   .cedarville-cursive-regular {
+     line-height: .8 !important;
+   }
+   .casamos{
+     font-size: 30px!important;
+    }
+    .numeros{
+      font-size: 40px!important;
+    }
+    .restante{
+      font-size: 12px!important;
+    }
+ }

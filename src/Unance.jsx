@@ -6,13 +6,13 @@ import AccessTimeOutlinedIcon from "@mui/icons-material/AccessTimeOutlined";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 export const Unance = ({ language }) => {
   return (
-    <Box>
+    <Box className="completo">
       <Typography
         variant="h4"
         align="center"
         color="secondary"
         className="abhaya-libre-bold"
-        sx={{ mt: 5 }}
+        sx={{ py: 8 }}
       >
         {traductor.unance[language]}
       </Typography>
@@ -23,7 +23,7 @@ export const Unance = ({ language }) => {
         sx={{
           justifyContent: "left",
           alignItems: "center",
-          mt: 6,
+          py: 4,
           width: "70%",
           mx: "auto",
         }}
@@ -48,7 +48,7 @@ export const Unance = ({ language }) => {
         sx={{
           justifyContent: "left",
           alignItems: "center",
-          mt: 3,
+          py: 4,
           width: "70%",
           mx: "auto",
         }}
@@ -72,7 +72,7 @@ export const Unance = ({ language }) => {
         sx={{
           justifyContent: "left",
           alignItems: "center",
-          my: 3,
+          py: 4,
           width: "70%",
           mx: "auto",
         }}

@@ -7,7 +7,7 @@ import CelebrationOutlinedIcon from "@mui/icons-material/CelebrationOutlined";
 import ReceiptLongOutlinedIcon from "@mui/icons-material/ReceiptLongOutlined";
 export const Itinerario = ({ language }) => {
   return (
-    <Box sx={{ position: "relative" }}>
+    <Box sx={{ position: "relative" }} className="completo">
       <Box
         sx={{
           position: "absolute",
