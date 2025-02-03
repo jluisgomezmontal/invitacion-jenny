@@ -5,7 +5,13 @@ import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 // import Swiper core and required modules
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import {
+  Navigation,
+  Pagination,
+  Scrollbar,
+  A11y,
+  Autoplay,
+} from "swiper/modules";
 
 // Import Swiper styles
 import "swiper/css";
@@ -64,9 +70,13 @@ export const Hospedaje = ({ language }) => {
       </Typography>
       <Swiper
         // install Swiper modules
-        modules={[Navigation, Pagination, Scrollbar, A11y]}
+        modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
         spaceBetween={50}
         slidesPerView={1}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
         navigation
         pagination={{ clickable: true }}
         scrollbar={{ draggable: true }}
