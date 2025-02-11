@@ -59,7 +59,7 @@ export const traductor = {
   },
   baile: {
     es: "Comienza el Baile 9:00 pm",
-    en: "Dancing starts at 9:00 pm",
+    en: "Dance party at 9:00 pm",
   },
   nustrosRecuerdos: {
     es: "Nuestros Recuerdos",
