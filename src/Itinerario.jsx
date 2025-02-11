@@ -114,48 +114,48 @@ export const Itinerario = ({ language }) => {
       </Grid2>
       <Box
         sx={{
-          height: "20px",
-          width: "20px",
+          height: "15px",
+          width: "15px",
           backgroundColor: "#F48476",
           borderRadius: 50,
           position: "absolute",
-          top: "20%",
+          top: "15%",
           left: "50%",
           transform: "translate(-50%, -50%)",
         }}
       ></Box>
       <Box
         sx={{
-          height: "20px",
-          width: "20px",
+          height: "15px",
+          width: "15px",
           backgroundColor: "#F48476",
           borderRadius: 50,
           position: "absolute",
-          top: "45%",
+          top: "36%",
           left: "50%",
           transform: "translate(-50%, -50%)",
         }}
       ></Box>
       <Box
         sx={{
-          height: "20px",
-          width: "20px",
+          height: "15px",
+          width: "15px",
           backgroundColor: "#F48476",
           borderRadius: 50,
           position: "absolute",
-          top: "68%",
+          top: "53%",
           left: "50%",
           transform: "translate(-50%, -50%)",
         }}
       ></Box>
       <Box
         sx={{
-          height: "20px",
-          width: "20px",
+          height: "15px",
+          width: "15px",
           backgroundColor: "#F48476",
           borderRadius: 50,
           position: "absolute",
-          top: "92%",
+          top: "72%",
           left: "50%",
           transform: "translate(-50%, -50%)",
         }}
@@ -166,13 +166,14 @@ export const Itinerario = ({ language }) => {
           backgroundColor: "#FEC5B4",
           borderRadius: 50,
           position: "absolute",
-          height: "19.5%",
-          top: "32.5%",
+          height: "58%",
+          zIndex: -1,
+          top: "43%",
           left: "50%",
           transform: "translate(-50%, -50%)",
         }}
       ></Box>
-      <Box
+      {/* <Box
         sx={{
           width: "5px",
           backgroundColor: "#FEC5B4",
@@ -195,7 +196,7 @@ export const Itinerario = ({ language }) => {
           left: "50%",
           transform: "translate(-50%, -50%)",
         }}
-      ></Box>
+      ></Box> */}
     </Box>
   );
 };
