@@ -41,7 +41,7 @@ export const Itinerario = ({ language }) => {
         align="center"
         color="secondary"
         className="abhaya-libre-bold"
-        sx={{ mt: 5 }}
+        sx={{ mt: 5, mb: 8 }}
       >
         {traductor.itinerario[language]}
       </Typography>
@@ -55,7 +55,14 @@ export const Itinerario = ({ language }) => {
           mx: "auto",
         }}
       >
-        <Grid2 size={6} sx={{ my: 2 }}>
+        <Grid2
+          size={5.5}
+          sx={{
+            my: 2,
+            position: "absolute",
+            top: "15%",
+          }}
+        >
           <Stack direction="row" spacing={1}>
             <Typography
               variant="body2"
@@ -69,9 +76,15 @@ export const Itinerario = ({ language }) => {
             <ChurchOutlinedIcon sx={{ fontSize: "60px" }} />
           </Stack>
         </Grid2>
-        <Grid2 size={6}></Grid2>
-        <Grid2 size={6} sx={{ my: 2 }}></Grid2>
-        <Grid2 size={6} sx={{ my: 2 }}>
+        <Grid2
+          size={5.5}
+          sx={{
+            my: 2,
+            position: "absolute",
+            top: "36%",
+            right: "5%",
+          }}
+        >
           <Stack direction="row" spacing={1}>
             <ReceiptLongOutlinedIcon sx={{ fontSize: "60px" }} />
             <Typography
@@ -85,7 +98,14 @@ export const Itinerario = ({ language }) => {
             </Typography>
           </Stack>
         </Grid2>
-        <Grid2 size={6} sx={{ my: 2 }}>
+        <Grid2
+          size={5.5}
+          sx={{
+            my: 2,
+            position: "absolute",
+            top: "58%",
+          }}
+        >
           <Stack direction="row" spacing={1}>
             <Typography
               variant="body2"
@@ -99,9 +119,15 @@ export const Itinerario = ({ language }) => {
             <LocalBarOutlinedIcon sx={{ fontSize: "60px" }} />
           </Stack>
         </Grid2>
-        <Grid2 size={6}></Grid2>
-        <Grid2 size={6}></Grid2>
-        <Grid2 size={6} sx={{ my: 2 }}>
+        <Grid2
+          size={5.5}
+          sx={{
+            my: 2,
+            position: "absolute",
+            top: "80%",
+            right: "5%",
+          }}
+        >
           <Stack direction="row" spacing={1}>
             <CelebrationOutlinedIcon sx={{ fontSize: "60px" }} />
             <Typography
@@ -116,6 +142,7 @@ export const Itinerario = ({ language }) => {
           </Stack>
         </Grid2>
       </Grid2>
+      {/* PUNTOS */}
       <Box
         sx={{
           height: "15px",
@@ -123,7 +150,7 @@ export const Itinerario = ({ language }) => {
           backgroundColor: "#F48476",
           borderRadius: 50,
           position: "absolute",
-          top: 90,
+          top: "20%",
           left: "50%",
           transform: "translate(-50%, -50%)",
         }}
@@ -135,7 +162,7 @@ export const Itinerario = ({ language }) => {
           backgroundColor: "#F48476",
           borderRadius: 50,
           position: "absolute",
-          top: 290,
+          top: "42%",
           left: "50%",
           transform: "translate(-50%, -50%)",
         }}
@@ -147,7 +174,7 @@ export const Itinerario = ({ language }) => {
           backgroundColor: "#F48476",
           borderRadius: 50,
           position: "absolute",
-          top: 480,
+          top: "63%",
           left: "50%",
           transform: "translate(-50%, -50%)",
         }}
@@ -159,20 +186,21 @@ export const Itinerario = ({ language }) => {
           backgroundColor: "#F48476",
           borderRadius: 50,
           position: "absolute",
-          top: 680,
+          top: "86%",
           left: "50%",
           transform: "translate(-50%, -50%)",
         }}
       ></Box>
+      {/* LINEA */}
       <Box
         sx={{
           width: "5px",
           backgroundColor: "#FEC5B4",
           borderRadius: 50,
           position: "absolute",
-          height: "64%",
+          height: "66%",
           zIndex: -1,
-          top: 390,
+          top: "53%",
           left: "50%",
           transform: "translate(-50%, -50%)",
         }}
