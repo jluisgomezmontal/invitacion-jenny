@@ -41,7 +41,7 @@ export const Itinerario = ({ language }) => {
         align="center"
         color="secondary"
         className="abhaya-libre-bold"
-        sx={{ my: 5 }}
+        sx={{ mt: 5 }}
       >
         {traductor.itinerario[language]}
       </Typography>
@@ -49,7 +49,11 @@ export const Itinerario = ({ language }) => {
         container
         rowSpacing={5}
         columnSpacing={5}
-        sx={{ width: "80%", mx: "auto" }}
+        sx={{
+          width: "90%",
+          height: "80%",
+          mx: "auto",
+        }}
       >
         <Grid2 size={6} sx={{ my: 2 }}>
           <Stack direction="row" spacing={1}>
@@ -119,7 +123,7 @@ export const Itinerario = ({ language }) => {
           backgroundColor: "#F48476",
           borderRadius: 50,
           position: "absolute",
-          top: "15%",
+          top: 90,
           left: "50%",
           transform: "translate(-50%, -50%)",
         }}
@@ -131,7 +135,7 @@ export const Itinerario = ({ language }) => {
           backgroundColor: "#F48476",
           borderRadius: 50,
           position: "absolute",
-          top: "36%",
+          top: 290,
           left: "50%",
           transform: "translate(-50%, -50%)",
         }}
@@ -143,7 +147,7 @@ export const Itinerario = ({ language }) => {
           backgroundColor: "#F48476",
           borderRadius: 50,
           position: "absolute",
-          top: "53%",
+          top: 480,
           left: "50%",
           transform: "translate(-50%, -50%)",
         }}
@@ -155,7 +159,7 @@ export const Itinerario = ({ language }) => {
           backgroundColor: "#F48476",
           borderRadius: 50,
           position: "absolute",
-          top: "72%",
+          top: 680,
           left: "50%",
           transform: "translate(-50%, -50%)",
         }}
@@ -166,9 +170,9 @@ export const Itinerario = ({ language }) => {
           backgroundColor: "#FEC5B4",
           borderRadius: 50,
           position: "absolute",
-          height: "58%",
+          height: "64%",
           zIndex: -1,
-          top: "43%",
+          top: 390,
           left: "50%",
           transform: "translate(-50%, -50%)",
         }}
