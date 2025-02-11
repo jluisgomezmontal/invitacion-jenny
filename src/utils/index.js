@@ -71,7 +71,7 @@ export const traductor = {
   },
   hospedaje: {
     es: "Hospedaje",
-    en: "Accommodations",
+    en: "Accommodation",
   },
   estancia: {
     es: "Para una estancia mas placentera, te compartimos estas sugerencias muy cercanas ala celebracion.",
