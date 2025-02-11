@@ -66,7 +66,7 @@ export const Recuerdos = ({ language }) => {
         className="merriweather-bold"
         sx={{ my: 3, mx: 4, position: "relative", zIndex: 1 }}
       >
-        #Jenny&Omar
+        #i&Omar
       </Typography>
       <Stack
         direction="row"

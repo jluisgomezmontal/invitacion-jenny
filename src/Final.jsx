@@ -10,7 +10,7 @@ export const Final = ({ language }) => {
         align="center"
         color="secondary"
         className="merriweather-bold"
-        sx={{ pt: 10, mx: 4, position: "relative", zIndex: 1 }}
+        sx={{ pt: "15%", mx: 4, position: "relative", zIndex: 1 }}
       >
         {traductor.final[language]}
       </Typography>
@@ -19,7 +19,7 @@ export const Final = ({ language }) => {
         align="center"
         color="secondary"
         className="merriweather-bold"
-        sx={{ py: 5, mx: 4, position: "relative", zIndex: 1 }}
+        sx={{ py: "5%", mx: 4, position: "relative", zIndex: 1 }}
       >
         {traductor.despedida[language]}
       </Typography>
@@ -29,7 +29,7 @@ export const Final = ({ language }) => {
         color="secondary"
         className="cedarville-cursive-regular"
       >
-        Jenny & Omar
+        Jenni & Omar
       </Typography>
     </Box>
   );

@@ -5,7 +5,7 @@ export const traductor = {
   },
   nuestraHistoria: {
     es: "Nuestra Historia",
-    en: "Our History",
+    en: "Our Story",
   },
   nuestraHistoriaTexto: [
     {
@@ -35,7 +35,7 @@ export const traductor = {
   },
   lugar: {
     es: "Iglesia del Señor San Marcos Evangelista",
-    en: "Church of the Lord Saint Mark the Evangelist",
+    en: "Iglesia del Señor San Marcos Evangelista",
   },
   abrirMapa: {
     es: "Abrir mapa",

@@ -80,6 +80,7 @@ export const Contador = ({ language }) => {
                 border: "2px solid white",
                 borderColor: "#FFE3E0",
                 borderRadius: "15px",
+                backgroundColor: "#ffe3e039",
               }}
             >
               <CardContent sx={{ textAlign: "center", py: 6, px: 0 }}>
