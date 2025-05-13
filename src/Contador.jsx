@@ -3,9 +3,9 @@ import { Box, CardContent, Typography } from "@mui/material";
 import { useEffect, useState } from "react";
 import Grid from "@mui/material/Grid2";
 import { traductor } from "./utils";
+import NumberFlow from "@number-flow/react";
 
 export const Contador = ({ language }) => {
-  console.log(language);
   const targetDate = new Date("November 28, 2025 17:00:00").getTime();
   const calculateTimeLeft = () => {
     const now = new Date().getTime();
@@ -25,7 +25,13 @@ export const Contador = ({ language }) => {
     return { days, hours, minutes, seconds };
   };
 
-  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+  const [timeLeft, setTimeLeft] = useState({
+    days: 365,
+    hours: 24,
+    minutes: 60,
+    seconds: 60,
+  });
+  console.log(timeLeft);
   useEffect(() => {
     const timer = setInterval(() => {
       setTimeLeft(calculateTimeLeft());
@@ -89,7 +95,7 @@ export const Contador = ({ language }) => {
                   color="secondary"
                   className="abhaya-libre-regular numeros"
                 >
-                  {card.tiempo}
+                  <NumberFlow willChange={false} value={card.tiempo} />
                 </Typography>
                 <hr />
                 <Typography

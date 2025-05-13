@@ -5,7 +5,7 @@ import { Idioma } from "./Idioma";
 export const Hero = ({ setLanguage, language }) => {
   return (
     <div className="hero">
-      <Contador language={language}/>
+      <Contador language={language} />
       <Idioma language={language} setLanguage={setLanguage} />
     </div>
   );
