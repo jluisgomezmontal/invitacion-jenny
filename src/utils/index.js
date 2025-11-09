@@ -37,9 +37,21 @@ export const traductor = {
     es: "Iglesia del Señor San Marcos Evangelista",
     en: "Iglesia del Señor San Marcos Evangelista",
   },
+  recepcionLugar: {
+    es: "Recepcion: Comisaria Ejidal",
+    en: "Recepcion: Comisaria Ejidal",
+  },
   abrirMapa: {
     es: "Abrir mapa",
     en: "Open map",
+  },
+  abrirMapaIglesia: {
+    es: "Ver ubicación de la iglesia",
+    en: "View church location",
+  },
+  abrirMapaRecepcion: {
+    es: "Ver ubicación de la recepción",
+    en: "View reception location",
   },
   itinerario: {
     es: "Itinerario",

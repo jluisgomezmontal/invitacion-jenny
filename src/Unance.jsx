@@ -4,6 +4,7 @@ import { traductor } from "./utils";
 import CalendarTodayOutlinedIcon from "@mui/icons-material/CalendarTodayOutlined";
 import AccessTimeOutlinedIcon from "@mui/icons-material/AccessTimeOutlined";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
+import ChurchOutlinedIcon from "@mui/icons-material/ChurchOutlined";
 export const Unance = ({ language }) => {
   return (
     <Box className="completo">
@@ -77,7 +78,7 @@ export const Unance = ({ language }) => {
           mx: "auto",
         }}
       >
-        <LocationOnOutlinedIcon
+        <ChurchOutlinedIcon
           sx={{ fontSize: "65px", fontWeight: "lighter" }}
           color="secondary"
         />
@@ -88,6 +89,30 @@ export const Unance = ({ language }) => {
           className="abhaya-libre-bold"
         >
           {traductor.lugar[language]}
+        </Typography>
+      </Stack>
+      <Stack
+        direction="row"
+        spacing={2}
+        sx={{
+          justifyContent: "left",
+          alignItems: "center",
+          py: 4,
+          width: "70%",
+          mx: "auto",
+        }}
+      >
+        <LocationOnOutlinedIcon
+          sx={{ fontSize: "65px", fontWeight: "lighter" }}
+          color="secondary"
+        />
+        <Typography
+          variant="h6"
+          align="left"
+          color="secondary"
+          className="abhaya-libre-bold"
+        >
+          {traductor.recepcionLugar[language]}
         </Typography>
       </Stack>
       {/* <Box
@@ -106,11 +131,15 @@ export const Unance = ({ language }) => {
         ></Box>
       </Box> */}
 
-      <Box
-        display="flex"
-        justifyContent="center"
-        alignItems="center"
-        sx={{ mt: 6 }}
+      <Stack
+        direction="column"
+        spacing={2}
+        sx={{
+          justifyContent: "center",
+          alignItems: "center",
+          mt: 6,
+          mb: 4,
+        }}
       >
         <Button
           variant="contained"
@@ -119,9 +148,18 @@ export const Unance = ({ language }) => {
             window.open("https://maps.app.goo.gl/Uy7942z6eMPb7d5o6", "_blank");
           }}
         >
-          {traductor.abrirMapa[language]}
+          {traductor.abrirMapaIglesia[language]}
         </Button>
-      </Box>
+        <Button
+          variant="contained"
+          endIcon={<LocationOnOutlinedIcon color="secondary" />}
+          onClick={() => {
+            window.open("https://maps.app.goo.gl/TU_ENLACE_COMISARIA", "_blank");
+          }}
+        >
+          {traductor.abrirMapaRecepcion[language]}
+        </Button>
+      </Stack>
     </Box>
   );
 };
