@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Grid from "@mui/material/Grid2";
 import { traductor } from "./utils";
 import NumberFlow from "@number-flow/react";
+import { motion } from "framer-motion";
 
 export const Contador = ({ language }) => {
   const targetDate = new Date("November 28, 2025 17:00:00").getTime();
@@ -67,6 +68,30 @@ export const Contador = ({ language }) => {
     },
   ];
 
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.15,
+        delayChildren: 0.2
+      }
+    }
+  };
+
+  const cardVariants = {
+    hidden: { y: 50, opacity: 0, scale: 0.8 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      scale: 1,
+      transition: {
+        duration: 0.6,
+        ease: "easeOut"
+      }
+    }
+  };
+
   return (
     <Box sx={{ flexGrow: 1 }}>
       <Grid
@@ -78,17 +103,33 @@ export const Contador = ({ language }) => {
           alignItems: "center",
           mx: 4,
         }}
+        component={motion.div}
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.3 }}
       >
         {cards.map((card, index) => (
-          <Grid size={3} key={index} sx={{ mt: 2, mx: 0 }}>
-            <Box
-              sx={{
-                border: "2px solid white",
-                borderColor: "#FFE3E0",
-                borderRadius: "15px",
-                backgroundColor: "#ffe3e06f",
-              }}
+          <Grid size={3} key={index} sx={{ mt: 2, mx: 0 }} component={motion.div} variants={cardVariants}>
+            <motion.div
+              whileHover={{ y: -10, scale: 1.05 }}
+              transition={{ type: "spring", stiffness: 300, damping: 20 }}
             >
+              <Box
+                sx={{
+                  border: "2px solid white",
+                  borderColor: "#FFE3E0",
+                  borderRadius: "20px",
+                  backgroundColor: "rgba(255, 227, 224, 0.65)",
+                  backdropFilter: "blur(10px)",
+                  boxShadow: "0 8px 32px rgba(244, 132, 118, 0.15)",
+                  transition: "all 0.3s ease",
+                  "&:hover": {
+                    boxShadow: "0 12px 40px rgba(244, 132, 118, 0.25)",
+                    backgroundColor: "rgba(255, 227, 224, 0.85)",
+                  }
+                }}
+              >
               <CardContent sx={{ textAlign: "center", py: 6, px: 0 }}>
                 <Typography
                   variant="h3"
@@ -107,40 +148,69 @@ export const Contador = ({ language }) => {
                   {card[language]}
                 </Typography>
               </CardContent>
-            </Box>
+              </Box>
+            </motion.div>
           </Grid>
         ))}
       </Grid>
-      <Typography
-        variant="h2"
-        className="cedarville-cursive-regular nombres jenny"
-        color="secondary"
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8, delay: 0.4 }}
       >
-        Jennifer Vazquez
-      </Typography>
-      <Typography
-        color="secondary"
-        variant="h3"
-        className="cedarville-cursive-regular nombres"
+        <Typography
+          variant="h2"
+          className="cedarville-cursive-regular nombres jenny"
+          color="secondary"
+        >
+          Jennifer Vazquez
+        </Typography>
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, scale: 0.5 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6, delay: 0.6 }}
       >
-        &
-      </Typography>
-      <Typography
-        color="secondary"
-        variant="h2"
-        className="cedarville-cursive-regular nombres"
+        <Typography
+          color="secondary"
+          variant="h3"
+          className="cedarville-cursive-regular nombres"
+        >
+          &
+        </Typography>
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8, delay: 0.7 }}
       >
-        Omar Alexander
-      </Typography>
-      <Typography
-        variant="h4"
-        sx={{ fontWeight: "bold" }}
-        className="abhaya-libre-regular casamos"
-        color="secondary"
-        align="center"
+        <Typography
+          color="secondary"
+          variant="h2"
+          className="cedarville-cursive-regular nombres"
+        >
+          Omar Alexander
+        </Typography>
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8, delay: 0.9 }}
       >
-        {traductor.hero[language]}
-      </Typography>
+        <Typography
+          variant="h4"
+          sx={{ fontWeight: "bold" }}
+          className="abhaya-libre-regular casamos"
+          color="secondary"
+          align="center"
+        >
+          {traductor.hero[language]}
+        </Typography>
+      </motion.div>
     </Box>
   );
 };

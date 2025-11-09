@@ -1,3 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
 .hero{
   background-image: url(./assets/jeny&omar.JPG);
   height: 100vh;
@@ -9,12 +21,18 @@
 }
 
 .completo{
-  height: 100vh;
+  min-height: 100vh;
+  position: relative;
+  overflow: visible;
 }
 hr{
   width: 30px;
   font-weight: bold;
   margin: 5px auto;
+  border: none;
+  border-top: 3px solid #F48476;
+  border-radius: 2px;
+  opacity: 0.8;
 }
 
 .merriweather-bold {
@@ -70,32 +88,38 @@ hr{
 
 .watermark-container{
   background: url('./assets/florrosa.png') no-repeat center;
-  opacity: 0.15; /* Hace que la imagen sea transparente */
+  opacity: 0.15;
   width: 100%;
   height: 600px;
   transform: rotate(-50deg);
   top: -80px;
   left: 150px;
+  filter: blur(1px);
+  transition: opacity 0.3s ease;
 }
 .watermark-container2{
-  position: absolute; /* Posición relativa para que los elementos hijos se posicionen correctamente */
+  position: absolute;
   background: url('./assets/florrosa.png') no-repeat center;
-  opacity: 0.15; /* Hace que la imagen sea transparente */
+  opacity: 0.15;
   width: 100%;
   height: 600px;
   transform: rotate(45deg);
   top: -50px;
   right: 100px;
+  filter: blur(1px);
+  transition: opacity 0.3s ease;
 }
 .watermark-container3{
-  position: absolute; /* Posición relativa para que los elementos hijos se posicionen correctamente */
+  position: absolute;
   background: url('./assets/florrosa.png') no-repeat center;
-  opacity: 0.15; /* Hace que la imagen sea transparente */
+  opacity: 0.15;
   width: 100%;
   height: 600px;
   transform: rotate(-25deg);
   bottom: 0px;
   left: 100px;
+  filter: blur(1px);
+  transition: opacity 0.3s ease;
 }
 
 .final{
@@ -105,11 +129,52 @@ hr{
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  position: relative;
+}
+
+.final::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0) 100%);
+  pointer-events: none;
 }
 
 .jenny{
   padding-top: 35px;
  }
+/* Efectos de scroll y transiciones globales */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FFE3E0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #F48476;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #E86F5F;
+}
+
+/* Animación sutil para los textos */
+.merriweather-bold,
+.abhaya-libre-bold {
+  transition: color 0.3s ease;
+}
+
+/* Mejoras visuales para botones globales */
+button {
+  transition: all 0.3s ease !important;
+}
+
  @media (max-width: 390px) {
    .jenny{
      padding-top: 30px;
