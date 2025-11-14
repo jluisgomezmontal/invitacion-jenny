@@ -244,7 +244,7 @@ export const Unance = ({ language }) => {
               variant="contained"
               endIcon={<LocationOnOutlinedIcon color="secondary" />}
               onClick={() => {
-                window.open("https://maps.app.goo.gl/TU_ENLACE_COMISARIA", "_blank");
+                window.open("https://maps.app.goo.gl/b3VJR6jFTnbvmUTz9", "_blank");
               }}
               sx={{
                 borderRadius: '25px',
